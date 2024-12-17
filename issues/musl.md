@@ -1,7 +1,7 @@
 # The Musl Libc
 
 The musl libc is a lightweight, posix compliant glibc alternative. For full
-details, see [musl.libc.org].
+details, see [musl.libc.org](https://musl.libc.org/).
 
 Musl can lead to incompatibilities with many programs. This is because binaries
 usually dynamically link with glibc. As it turns out, it is actually not
@@ -34,16 +34,16 @@ source code is to compile it yourself, however this isn't exactly possible.
     glibc.
 
 4.  `voidnsrun`. As is often the case, some guy on the internet has had this
-    problem before. [https://github.com/gch1p/voidnsrun] is a void linux
+    problem before. [gch1p/voidnsrun](https://github.com/gch1p/voidnsrun) is a void linux
     specific utility for creating an isolated namespace containing glibc for
     when your primary environment is musl libc void linux. As it uses linux
     namespace features, most of it should be applicable to any system as long
-    as you can get the namespace set up
-    [https://ch1p.io/void-linux-musl-glibc/].
+    as you can get the namespace set up. See
+    [ch1p's blog post](https://ch1p.io/void-linux-musl-glibc/).
 
 5.  `chroot`. If you need to, you can set up a chroot environment with glibc,
-    as suggested by
-    [https://docs.voidlinux.org/installation/musl.html#glibc-chroot].
+    as suggested by the
+    [void linux documentation](https://docs.voidlinux.org/installation/musl.html#glibc-chroot).
 
 6.  Don't use the program. This isn't really a solution, but there are often
     open source alternatives and it will likely be much easier to get those
@@ -59,8 +59,8 @@ using the musl libc implementation.
 
 The solution is to compile node-libcurl yourself, which can be done with npm.
 
-1.  Ensure all the requisite dependencies have been installed. See
-    [https://github.com/JCMais/node-libcurl#building-on-linux].
+1.  Ensure all the requisite dependencies have been installed. See the
+    [node-libcurl repo](https://github.com/JCMais/node-libcurl#building-on-linux).
 
 2.  Obtain the package itself. This can be done with `npm install` and then
     going into the package directory inside `node_modules/`.

@@ -2,7 +2,7 @@
 
 NVidia drivers have been notoriously painful on linux systems.
 
-Also see the Arch wiki page, [https://wiki.archlinux.org/title/NVIDIA].
+Also see the [Arch wiki page](https://wiki.archlinux.org/title/NVIDIA).
 
 ## Installing Drivers
 
@@ -31,10 +31,10 @@ download the drivers, under "additional information". Click on the `README`
 link to get an in depth and very useful set of instructions. At the time of
 writing, the latest feature drivers are at version `565.77`. The link to the
 instructions for this specific driver is
-[http://us.download.nvidia.com/XFree86/Linux-x86_64/565.77/README/installdriver.html].
+[here](http://us.download.nvidia.com/XFree86/Linux-x86_64/565.77/README/installdriver.html).
 
 1.  Download the drivers you want from
-    [https://www.nvidia.com/en-us/drivers/unix/]
+    [NVidia's website](https://www.nvidia.com/en-us/drivers/unix/)
 
 2.  Uninstall any nvidia related packages. An example of how to do this is with
     `apt purge '*nvidia*'` for debian based systems.
@@ -63,10 +63,10 @@ modules don't implement RTD3 on turing cards, which basically means if you have
 a computer with a new nvidia gpu you won't get the same power savings as you
 will with the proprietary modules.
 
-More information can be found at
-[https://github.com/NVIDIA/open-gpu-kernel-modules/discussions/457] and the
-linked
-[https://forums.developer.nvidia.com/t/clarifying-560-series-drivers-open-sourcedness-vs-kernel-module-type-proprietary/292698/2].
+More information can be found on the
+[nvidia open gpu kernel repo](https://github.com/NVIDIA/open-gpu-kernel-modules/discussions/457)
+and the linked
+[forum post for 560 drivers](https://forums.developer.nvidia.com/t/clarifying-560-series-drivers-open-sourcedness-vs-kernel-module-type-proprietary/292698/2).
 
 ## New GPU
 
@@ -84,10 +84,10 @@ musl libc systems.
 The only real solution is to use nouveau drivers instead. Yay.
 
 As usual, someone on the internet seems to have had this issue before and
-posted some stuff on github [https://github.com/git-bruh/nvidia-musl]. Maybe
-it'll help. It is likely also somewhat outdated. Good luck.
+posted some stuff on github [git-bruh/nvidia-musl](https://github.com/git-bruh/nvidia-musl).
+Maybe it'll help. It is likely also somewhat outdated. Good luck.
 
-See also [musl](/musl.md).
+See also [musl](/issues/musl.md).
 
 ## Wayland
 
