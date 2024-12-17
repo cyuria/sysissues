@@ -1,0 +1,17 @@
+{
+    "musl.md": {
+        "libc": "musl",
+        "distros": [
+            "chimera linux",
+            "gentoo",
+            "void linux",
+            "alpine linux"
+        ]
+    },
+    "nvidia.md": {
+        "tags": [
+            "old"
+        ],
+        "libc": "musl"
+    }
+}
